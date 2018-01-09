@@ -1,0 +1,30 @@
+@import "./base.less";
+@main-color: #ff7e00;
+
+.phone_end {
+  header {
+    height: 2rem;
+    padding-left: 15/40rem;
+    padding-right: 30/40rem;
+    background-color:@main-color;
+    position: relative;
+    .language, .more {
+      width: 1rem;
+      height: 35/40rem;
+      background: url(../images/checkout_language.png) no-repeat left top;
+      .bgz();
+      margin-top: 0.5rem;
+    }
+    .more {
+      background: url(../images/more.png) no-repeat left top;
+      .bgz();
+    }
+    .logo {
+      width: 113/40rem;
+      height: 35/40rem;
+      .center();
+      background: url(../images/logo.png) no-repeat left top;
+      .bgz();
+    }
+  }
+}
