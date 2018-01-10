@@ -103,6 +103,9 @@ li{list-style:none}
     margin-top: 60px;
     background-color: black;
 }
+.pc .banner .sw-slide img{
+    width: 100%;
+}
 
 .pc .product{
     background-color: black;

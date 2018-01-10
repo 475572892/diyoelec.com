@@ -3,7 +3,7 @@ $(window).load(function() {
 		transitionDuration: 600,
 		autoPlayTimeout: 8000,
 		// autoPlay: false,
-		sliderHeight: '300px'
+		sliderHeight: '6rem'
 	});
   $('#full_feature').swipeslider({
     transitionDuration: 600,
