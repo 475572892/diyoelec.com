@@ -1,9 +1,14 @@
 $(window).load(function() {
-  
+	$('#pc_feature').swipeslider({
+		transitionDuration: 600,
+		autoPlayTimeout: 8000,
+		// autoPlay: false,
+		sliderHeight: '300px'
+	});
   $('#full_feature').swipeslider({
     transitionDuration: 600,
     autoPlayTimeout: 10000,
-    sliderHeight: '8.5rem',
+    sliderHeight: '5.5rem',
     prevNextButtons: false
   })
   

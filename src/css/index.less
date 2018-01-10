@@ -1,7 +1,12 @@
 @import "./base.less";
 @main-color: #ff7e00;
 
+
 .phone_end {
+  display: none;
+  img{
+    width: 100%;
+  }
   // 头部区域
   header {
     height: 2rem;
@@ -62,6 +67,7 @@
         text-align: center;
         line-height: 48/40rem;
         font-size: 22/40rem;
+        position: absolute;
       }
     }
     .hide {
@@ -103,10 +109,6 @@
     }
   }
 
-  // 轮播图区域
-  .slider_container {
-    height: 340/40rem;
-  }
 
   // 主要内容区域
   .main_content {
@@ -123,6 +125,7 @@
         a{
           height: 100%;
           display: block;
+          text-align: center;
           img {
             width: 90/40rem;
             height: 90/40rem;
@@ -161,7 +164,7 @@
         overflow: scroll;
         ul {
           padding: 0 37/40rem;
-          width: 980/40rem;
+          width: 26.5rem;
           height: 265/40rem;
           li {
             float: left;
@@ -272,7 +275,7 @@
 
   // 底部区域
   footer {
-    height: 297/40rem;
+    //height: 297/40rem;
     padding: 0.5rem 1rem 12/40rem 12/40rem;
     background: url(../images/index/11.png) no-repeat left top;
     .bz();
@@ -339,5 +342,14 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .pc{
+    display: none;
+  }
+  .phone_end{
+    display: block!important;
   }
 }
