@@ -50,7 +50,7 @@ gulp.task('html', function () {
 
 gulp.task('img', function() {
   gulp
-      .src('./src/images/*.*')
+      .src('./src/images/**/*.*')
       .pipe( gulp.dest('./dist/images') )
 })
 

@@ -10,12 +10,198 @@
 </head>
 <body>
    <div class="phone_end">
+      <!-- 头部区域开始 -->
       <header>
          <div class="language fl"></div>
-         <div class="logo"></div>
-         <div class="more fr"></div>
+         <div class="logo" id="logo"></div>
+         <div class="search_input hide">
+            <input type="text" placeholder="请输入搜索关键词">
+            <i id="search_btn">搜索</i>
+         </div>
+         <div class="more fr" id="more_nav"></div>
+         <div class="search fr" id="search_fdj"></div>
+         
+         <div class="slid_list hide" id="slid_list">
+            <b id="close_slide">×</b>
+            <ul>
+               <li><a href="javascript:;">HOME</a></li>
+               <li><a href="javascript:;">ABOUT</a></li>
+               <li><a href="javascript:;">PRODUCT</a></li>
+               <li><a href="javascript:;">SERVICES</a></li>
+            </ul>
+         </div>
       </header>
+      <!-- 头部区域结束 -->
+      
+      <!-- 轮播区域开始 -->
+      <article class="slider_container">
+         <figure id="full_feature" class="swipslider">
+            <ul class="sw-slides">
+               <li class="sw-slide">
+                  <a href="javascript:;"><img src="./images/index/slider1.jpg"></a>
+               </li>
+               <li class="sw-slide">
+                  <a href="javascript:;"><img src="./images/index/slider2.jpg"></a>
+               </li>
+               <li class="sw-slide">
+                  <a href="javascript:;"><img src="./images/index/slider3.jpg"></a>
+               </li>
+               <li class="sw-slide">
+                  <a href="javascript:;"><img src="./images/index/slider4.jpg"></a>
+               </li>
+            </ul>
+         </figure>
+      </article>
+      <!-- 轮播区域结束 -->
+      
+      <!-- 商品展示区域开始 -->
+      <section class="main_content">
+         <div class="nav">
+            <ul>
+               <li>
+                  <a href="javascript:;">
+                     <img src="./images/index/1.png">
+                     <p>PRODUCT</p>
+                  </a>
+               </li>
+               <li>
+                  <a href="javascript:;">
+                     <img src="./images/index/2.png">
+                     <p>ABOUT</p>
+                  </a>
+               </li>
+               <li>
+                  <a href="javascript:;">
+                     <img src="./images/index/3.png">
+                     <p>SERVICES</p>
+                  </a>
+               </li>
+               <li>
+                  <a href="javascript:;">
+                     <img src="./images/index/4.png">
+                     <p>CONTACTS</p>
+                  </a>
+               </li>
+            </ul>
+         </div>
+         <div class="product_display">
+            <div class="title">
+               <span>PRODUCT DISPLAY</span>
+            </div>
+            <div class="products">
+               <ul class="clearfix">
+                  <li>
+                     <a href="javascript:;">
+                        <div class="top">
+                           <img src="./images/index/5.png" alt="">
+                        </div>
+                        <div class="name">USB Cable</div>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="javascript:;">
+                        <div class="top">
+                           <img src="./images/index/6.png" alt="">
+                        </div>
+                        <div class="name">Charger</div>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="javascript:;">
+                        <div class="top">
+                           <img src="./images/index/7.png" alt="">
+                        </div>
+                        <div class="name">Cable</div>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="javascript:;">
+                        <div class="top">
+                           <img src="./images/index/7.png" alt="">
+                        </div>
+                        <div class="name">Cable</div>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+            <div class="more"><a href=":javascript">MORE ></a></div>
+         </div>
+         <div class="company_news">
+            <div class="title"><span>COMPANY NEWS</span></div>
+            <div class="news_detail">
+               <ul>
+                  <li>
+                     <img src="./images/index/8.png" alt="">
+                     <div>
+                        <p class="tit">e are a cable factory founded in 2006,</p>
+                        <span class="cont">e are a cable factory are a cable factory are a cable factory...<span class="more"><a href="javascript:;">[more]</a></span></span>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+            <div class="news_list">
+               <ul>
+                  <li>
+                     <a href="javascript:;">a cable factory...</a>
+                     <span class="date">12-10</span>
+                  </li>
+                  <li>
+                     <a href="javascript:;">a cable factory...</a>
+                     <span class="date">12-10</span>
+                  </li>
+                  <li>
+                     <a href="javascript:;">a cable factory...</a>
+                     <span class="date">12-10</span>
+                  </li>
+                  <li>
+                     <a href="javascript:;">a cable factory...</a>
+                     <span class="date">12-10</span>
+                  </li>
+               </ul>
+               <div class="more"><a href="javascript:;">MORE ></a></div>
+            </div>
+         </div>
+      </section>
+      <!-- 商品展示区域结束 -->
+      
+      <!-- 底部区域开始 -->
+      <footer>
+         <div class="logo">
+            <img src="./images/index/logo.png" alt="">
+         </div>
+         <div class="company">
+            <p>Changzhou Diyou Electronic Co,Ltd</p>
+            <p>ONE-STOP SUPPLINER FOR CABLES AND CONNECTORS</p>
+         </div>
+         <div class="callUs clearfix">
+            <div class="left fl">
+               <div class="picWrap fl">
+                  <img src="./images/index/9.png" alt="">
+               </div>
+               <div class="tel">
+                  <p>Call us : </p>
+                  <p>(000) 000000</p>
+               </div>
+            </div>
+            <div class="right fr">
+               <div class="picWrap fl">
+                  <img src="./images/index/10.png" alt="">
+               </div>
+               <div class="email">
+                  <p>Support@xxxxx</p>
+                  <p>@xxxxx</p>
+               </div>
+            </div>
+         </div>
+         <div class="shenming">
+            <p>Copyright 2009-2017 wooboo.com.cn allright reserved</p>
+            <p>Company address: XXXXXXXXXXXXXXXXXXXX</p>
+         </div>
+      </footer>
+      <!-- 底部区域结束 -->
    </div>
+   <script src="./lib/js/jquery-2.2.4.min.js"></script>
+   <script src="./lib/js/swipeslider.min.js"></script>
    <script src="./js/all.min.js"></script>
 </body>
 </html>
