@@ -54,6 +54,12 @@ gulp.task('img', function() {
       .pipe( gulp.dest('./dist/images') )
 })
 
+gulp.task('lib', function() {
+  gulp
+      .src('./src/lib/js/*.*')
+      .pipe( gulp.dest('./dist/lib/js') )
+})
+
 gulp.task('bs', function () {
   browserSync.init({
     server: {
@@ -65,11 +71,11 @@ gulp.task('bs', function () {
 gulp.task('watch', function() {
   gulp.watch('./src/js/*.js', ['js'])
   gulp.watch('./src/css/*.css', ['css'])
-  // gulp.watch('./src/css/less/*.less', ['less'])
+  gulp.watch('./src/lib/js/*.js', ['lib'])
   gulp.watch('./src/*.html', ['html'])
 })
 
 
-gulp.task('default', ['js', 'css', 'less', 'html', 'img', 'bs', 'watch'], function() {
+gulp.task('default', ['js', 'css', 'less', 'html', 'img', 'lib', 'bs', 'watch'], function() {
   console.log('gulp 任务执行中....')
 })

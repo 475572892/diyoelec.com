@@ -35,6 +35,11 @@ li{list-style:none}
     position: relative;
     top: -85px;
 }
+.pc .nav .menux{
+    width: 50px;
+border-bottom: 3px solid red;
+padding: 10px 2px 3px 5px;
+}
 .pc .nav .logo{
     display: inline-block;
     width: 120px;
