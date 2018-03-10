@@ -10,54 +10,60 @@ var reload = browserSync.reload;
 
 gulp.task('js', function () {
   gulp
-      .src('./src/js/*.js')
-      .pipe(concat('all.min.js'))
-      .pipe(uglify())
-      .pipe(gulp.dest('./dist/js'))
-      .pipe(reload({ stream: true }))
+    .src('./src/js/*.js')
+    .pipe(concat('all.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('./dist/js'))
+    .pipe(reload({ stream: true }))
 })
 
 gulp.task('less', function () {
   gulp
-      .src('./src/css/*.less')
-      .pipe(less())
-      .pipe(cssnano())
-      .pipe(gulp.dest('./src/css'))
-      .pipe(reload({ stream: true }))
+    .src('./src/css/*.less')
+    .pipe(less())
+    .pipe(cssnano())
+    .pipe(gulp.dest('./src/css'))
+    .pipe(reload({ stream: true }))
 })
 
 gulp.task('css', function () {
   gulp
-      .src('./src/css/*.css')
-      .pipe(concat('all.min.css'))
-      .pipe(cssnano())
-      .pipe(gulp.dest('./dist/css'))
-      .pipe(reload({ stream: true }));
+    .src('./src/css/*.css')
+    .pipe(concat('all.min.css'))
+    .pipe(cssnano())
+    .pipe(gulp.dest('./dist/css'))
+    .pipe(reload({ stream: true }));
 })
 
 gulp.task('html', function () {
   gulp
-      .src('./src/*.html')
-      .pipe(htmlmin({
-        collapseWhitespace: true,
-        minifyCSS: true,
-        minifyJS: true,
-        removeComments: true
-      }))
-      .pipe(gulp.dest('./dist'))
-      .pipe(reload({ stream: true }));
+    .src('./src/*.html')
+    .pipe(htmlmin({
+      collapseWhitespace: true,
+      minifyCSS: true,
+      minifyJS: true,
+      removeComments: true
+    }))
+    .pipe(gulp.dest('./dist'))
+    .pipe(reload({ stream: true }));
 })
 
-gulp.task('img', function() {
+gulp.task('img', function () {
   gulp
-      .src('./src/images/**/*.*')
-      .pipe( gulp.dest('./dist/images') )
+    .src('./src/images/**/*.*')
+    .pipe(gulp.dest('./dist/images'))
 })
 
-gulp.task('lib', function() {
+gulp.task('lib', function () {
   gulp
-      .src('./src/lib/js/*.*')
-      .pipe( gulp.dest('./dist/lib/js') )
+    .src('./src/lib/js/*.*')
+    .pipe(gulp.dest('./dist/lib/js'))
+})
+
+gulp.task('cname', function () {
+  gulp
+    .src(['./src/CNAME', './src/favicon.ico'])
+    .pipe(gulp.dest('./dist'))
 })
 
 gulp.task('bs', function () {
@@ -68,14 +74,14 @@ gulp.task('bs', function () {
   });
 });
 
-gulp.task('watch', function() {
+gulp.task('watch', function () {
   gulp.watch('./src/js/*.js', ['js'])
   gulp.watch('./src/css/*.css', ['css'])
   gulp.watch('./src/lib/js/*.js', ['lib'])
+  gulp.watch('./src/CNAME', ['cname'])
   gulp.watch('./src/*.html', ['html'])
 })
 
-
-gulp.task('default', ['js', 'css', 'less', 'html', 'img', 'lib', 'bs', 'watch'], function() {
+gulp.task('default', ['js', 'css', 'less', 'html', 'img', 'lib', 'cname', 'bs', 'watch'], function () {
   console.log('gulp 任务执行中....')
 })
