@@ -378,27 +378,26 @@ li {
 }
 
 .pc .wrap {
-    margin: 5px 10px 20px 0;
+    margin: 10px;
 }
 
-.pc .wrap .leftside {
+.pc .wrap .sideleft {
     background-color: #630;
     width: 200px;
     height: 900px;
-    margin-left: 10px;
     float: left;
 }
 
-.pc .wrap .leftside .sidebar {
+.pc .wrap .sideleft .sidebar {
     background-color: #ff7e00;
-    height: 30px;
+    height: 35px;
     color: #fff;
     text-align: center;
+    padding-top: 5px;
 }
 
-.pc .wrap .rightside {
+.pc .wrap .sideright {
     background-color: #212121;
     height: 900px;
-    margin-left: 220px;
-    margin-right: 10px;
+    margin-left: 210px;
 }
