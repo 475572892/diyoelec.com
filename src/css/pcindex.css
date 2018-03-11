@@ -352,3 +352,21 @@ li {
     line-height: 40px;
     margin-left: 50px;
 }
+
+.breadcrumb {
+    background-color: #000;
+}
+
+.breadcrumb>li+li:before {
+    color: #ff7e00;
+    content: " > ";
+    padding: 0 5px;
+}
+
+.breadcrumb>li a {
+    color: #fff;
+}
+
+.breadcrumb>.active {
+    color: #ff7e00;
+}

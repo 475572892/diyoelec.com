@@ -56,8 +56,8 @@ gulp.task('img', function () {
 
 gulp.task('lib', function () {
   gulp
-    .src('./src/lib/js/*.*')
-    .pipe(gulp.dest('./dist/lib/js'))
+    .src('./src/lib/**/*.*')
+    .pipe(gulp.dest('./dist/lib'))
 })
 
 gulp.task('cname', function () {
