@@ -370,3 +370,35 @@ li {
 .breadcrumb>.active {
     color: #ff7e00;
 }
+
+.pc .crumb {
+    height: 38px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pc .wrap {
+    margin: 5px 10px 20px 0;
+}
+
+.pc .wrap .leftside {
+    background-color: #630;
+    width: 200px;
+    height: 900px;
+    margin-left: 10px;
+    float: left;
+}
+
+.pc .wrap .leftside .sidebar {
+    background-color: #ff7e00;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.pc .wrap .rightside {
+    background-color: #212121;
+    height: 900px;
+    margin-left: 220px;
+    margin-right: 10px;
+}

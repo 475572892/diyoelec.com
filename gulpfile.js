@@ -62,7 +62,7 @@ gulp.task('lib', function () {
 
 gulp.task('cname', function () {
   gulp
-    .src(['./src/CNAME', './src/favicon.ico'])
+    .src(['./src/CNAME', './src/favicon.ico', './src/.gitignore', './src/README.md'])
     .pipe(gulp.dest('./dist'))
 })
 
