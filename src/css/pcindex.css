@@ -26,7 +26,7 @@ li {
     top: 0;
     bottom: 0;
     margin: auto;
-    background-color: #ff7e00;
+    background-color: coral;
     font-size: 12px;
     padding: 0 10px;
     border-radius: 10px;
@@ -35,7 +35,7 @@ li {
 }
 
 .pc .nav .menu {
-    color: white;
+    color: #FFFFFF;
     font-size: 14px;
     width: 100px;
     height: 60px;
@@ -47,14 +47,14 @@ li {
 
 .pc .nav .menu span {
     padding-bottom: 8px;
-    border-bottom: 2px solid #ff7e00;
+    border-bottom: 2px solid coral;
 }
 
 .pc .nav .logo {
     display: inline-block;
     width: 120px;
     height: 120px;
-    background-color: black;
+    background-color: #000000;
     border-radius: 100%;
     position: relative;
 }
@@ -68,7 +68,7 @@ li {
     right: 0;
     position: absolute;
     margin: auto;
-    background-color: #ff7e00;
+    background-color: coral;
     border-radius: 100%;
 }
 
@@ -101,7 +101,7 @@ li {
     padding: 0 10px;
     border: 0;
     background-color: #454545;
-    color: white;
+    color: #FFFFFF;
     outline: none;
 }
 
@@ -127,7 +127,7 @@ li {
 
 .pc .banner {
     margin-top: 60px;
-    background-color: black;
+    background-color: #000000;
 }
 
 .pc .banner .sw-slide img {
@@ -135,7 +135,7 @@ li {
 }
 
 .pc .product {
-    background-color: black;
+    background-color: #000000;
     padding: 0 50px;
     height: 380px;
     position: relative;
@@ -153,7 +153,7 @@ li {
     display: inline-block;
     height: 60px;
     line-height: 60px;
-    color: #ff7e00;
+    color: coral;
     font-size: 30px;
     font-weight: 100;
 }
@@ -174,7 +174,7 @@ li {
     width: 180px;
     height: 250px;
     display: inline-block;
-    background-color: #ff7e00;
+    background-color: coral;
     text-align: center;
     border-radius: 20px;
 }
@@ -193,7 +193,7 @@ li {
 
 .pc .more {
     font-size: 16px;
-    color: #ff7e00;
+    color: coral;
     position: absolute;
     right: 50px;
     bottom: 30px;
@@ -219,7 +219,7 @@ li {
 }
 
 .pc .aboutus div h2 {
-    color: #ff7e00;
+    color: coral;
     font-weight: 100;
     font-size: 20px;
 }
@@ -230,7 +230,7 @@ li {
 }
 
 .pc .culture {
-    background-color: black;
+    background-color: #000000;
     overflow: hidden;
 }
 
@@ -251,13 +251,13 @@ li {
 }
 
 .pc .culture ul li p {
-    color: #ff7e00;
+    color: coral;
     font-size: 20px;
 }
 
 .pc .culture ul li span {
     width: 70%;
-    color: white;
+    color: #FFFFFF;
     display: inline-block;
     text-align: left;
     font-size: 14px;
@@ -277,7 +277,7 @@ li {
 }
 
 .pc .link div p {
-    color: white;
+    color: #FFFFFF;
     line-height: 25px;
 }
 
@@ -289,7 +289,7 @@ li {
 }
 
 .pc .news {
-    background-color: black;
+    background-color: #000000;
     overflow: hidden;
     position: relative;
     height: 400px;
@@ -318,7 +318,7 @@ li {
     content: "";
     width: 10px;
     height: 10px;
-    background: #ff7e00;
+    background: coral;
     position: absolute;
     top: 22px;
     left: 0;
@@ -330,7 +330,7 @@ li {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    color: #ff7e00;
+    color: coral;
 }
 
 .pc .news ul li span {
@@ -341,34 +341,35 @@ li {
 }
 
 .pc .footer {
-    background-color: #ff7e00;
+    background-color: coral;
     overflow: hidden;
     height: 40px;
 }
 
 .pc .footer p {
-    color: white;
+    color: #FFFFFF;
     height: 40px;
     line-height: 40px;
     margin-left: 50px;
 }
 
 .breadcrumb {
-    background-color: #000;
+    background-color: #000000;
 }
 
+a.list-group-item:before,
 .breadcrumb>li+li:before {
-    color: #ff7e00;
+    color: coral;
     content: " > ";
     padding: 0 5px;
 }
 
 .breadcrumb>li a {
-    color: #fff;
+    color: #FFFFFF;
 }
 
 .breadcrumb>.active {
-    color: #ff7e00;
+    color: coral;
 }
 
 .pc .crumb {
@@ -388,16 +389,42 @@ li {
     float: left;
 }
 
-.pc .wrap .sideleft .sidebar {
-    background-color: #ff7e00;
-    height: 35px;
-    color: #fff;
-    text-align: center;
-    padding-top: 5px;
-}
-
 .pc .wrap .sideright {
-    background-color: #212121;
+    background-color: SlateGray;
     height: 900px;
     margin-left: 210px;
+}
+
+.list-group-item,
+a.list-group-item:link,
+a.list-group-item:visited,
+a.list-group-item:hover,
+a.list-group-item:active {
+    background-color: transparent;
+    border: transparent;
+}
+a.list-group-item:link{
+    color: white;
+}
+
+a.list-group-item:visited{
+    color: white;
+}
+
+li.list-group-item.active,
+li.list-group-item.active:focus,
+li.list-group-item.active:hover {
+    background-color: coral;
+    border-color: coral;
+    text-align: center;
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
 }
