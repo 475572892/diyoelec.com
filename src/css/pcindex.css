@@ -336,7 +336,7 @@ li {
     position: absolute;
     top: 0;
     right: 0;
-    color: #666666;
+    color: #333333;
 }
 
 .pc .footer {
@@ -389,7 +389,6 @@ a.list-group-item:before,
 }
 
 .pc .wrap .sideright {
-    background-color: #666666;
     height: 900px;
     margin-left: 210px;
 }
@@ -439,4 +438,24 @@ li.list-group-item.active:hover {
 .list-group-item:last-child {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
+}
+
+.pc .wrap .sideright .pagecontent {
+    background-color: #333333;
+    height: 810px;
+}
+
+.pc .wrap .sideright .pagenum {
+    height: 90px;
+}
+
+.pc .wrap .sideright .pagetitle {
+    padding: 10px 40px 0;
+    height: 55px;
+}
+
+.pc .wrap .sideright .pagetitle p {
+    color: #ff6633;
+    padding: 0 0 5px 10px;
+    border-bottom: 2px solid #cccccc;
 }
