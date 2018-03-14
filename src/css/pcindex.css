@@ -14,7 +14,7 @@ li {
     position: fixed;
     left: 0;
     top: 0;
-    background-color: black;
+    background-color: #000000;
     text-align: center;
     z-index: 10;
 }
@@ -25,7 +25,7 @@ li {
     top: 0;
     bottom: 0;
     margin: auto;
-    background-color: coral;
+    background-color: #ff6633;
     font-size: 12px;
     padding: 0 10px;
     border-radius: 10px;
@@ -34,7 +34,7 @@ li {
 }
 
 .pc .nav .menu {
-    color: white;
+    color: #ffffff;
     font-size: 14px;
     width: 100px;
     height: 60px;
@@ -46,14 +46,14 @@ li {
 
 .pc .nav .menu span {
     padding-bottom: 8px;
-    border-bottom: 2px solid coral;
+    border-bottom: 2px solid #ff6633;
 }
 
 .pc .nav .logo {
     display: inline-block;
     width: 120px;
     height: 120px;
-    background-color: black;
+    background-color: #000000;
     border-radius: 100%;
     position: relative;
 }
@@ -67,7 +67,7 @@ li {
     right: 0;
     position: absolute;
     margin: auto;
-    background-color: coral;
+    background-color: #ff6633;
     border-radius: 100%;
 }
 
@@ -99,8 +99,8 @@ li {
     line-height: 25px;
     padding: 0 10px;
     border: 0;
-    background-color: darkgray;
-    color: white;
+    background-color: #999999;
+    color: #ffffff;
     outline: none;
 }
 
@@ -110,7 +110,7 @@ li {
     right: 0;
     width: 25px;
     height: 25px;
-    background-color: lightgrey;
+    background-color: #cccccc;
     border-radius: 100%;
 }
 
@@ -126,7 +126,7 @@ li {
 
 .pc .banner {
     margin-top: 60px;
-    background-color: black;
+    background-color: #000000;
 }
 
 .pc .banner .sw-slide img {
@@ -134,7 +134,7 @@ li {
 }
 
 .pc .product {
-    background-color: black;
+    background-color: #000000;
     padding: 0 50px;
     height: 380px;
     position: relative;
@@ -152,7 +152,7 @@ li {
     display: inline-block;
     height: 60px;
     line-height: 60px;
-    color: coral;
+    color: #ff6633;
     font-size: 30px;
     font-weight: 100;
 }
@@ -173,7 +173,7 @@ li {
     width: 180px;
     height: 250px;
     display: inline-block;
-    background-color: coral;
+    background-color: #ff6633;
     text-align: center;
     border-radius: 20px;
 }
@@ -192,7 +192,7 @@ li {
 
 .pc .more {
     font-size: 16px;
-    color: coral;
+    color: #ff6633;
     position: absolute;
     right: 50px;
     bottom: 30px;
@@ -201,7 +201,7 @@ li {
 
 .pc .aboutus {
     height: 300px;
-    background-color: saddlebrown;
+    background-color: #663300;
 }
 
 .pc .aboutus img {
@@ -218,7 +218,7 @@ li {
 }
 
 .pc .aboutus div h2 {
-    color: coral;
+    color: #ff6633;
     font-weight: 100;
     font-size: 20px;
 }
@@ -229,7 +229,7 @@ li {
 }
 
 .pc .culture {
-    background-color: black;
+    background-color: #000000;
     overflow: hidden;
 }
 
@@ -250,20 +250,20 @@ li {
 }
 
 .pc .culture ul li p {
-    color: coral;
+    color: #ff6633;
     font-size: 20px;
 }
 
 .pc .culture ul li span {
     width: 70%;
-    color: white;
+    color: #ffffff;
     display: inline-block;
     text-align: left;
     font-size: 14px;
 }
 
 .pc .link {
-    background-color: saddlebrown;
+    background-color: #663300;
     overflow: hidden;
     position: relative;
 }
@@ -276,7 +276,7 @@ li {
 }
 
 .pc .link div p {
-    color: white;
+    color: #ffffff;
     line-height: 25px;
 }
 
@@ -288,7 +288,7 @@ li {
 }
 
 .pc .news {
-    background-color: black;
+    background-color: #000000;
     overflow: hidden;
     position: relative;
     height: 400px;
@@ -329,46 +329,46 @@ li {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    color: coral;
+    color: #ff6633;
 }
 
 .pc .news ul li span {
     position: absolute;
     top: 0;
     right: 0;
-    color: dimgray;
+    color: #666666;
 }
 
 .pc .footer {
-    background-color: coral;
+    background-color: #ff6633;
     overflow: hidden;
     height: 40px;
 }
 
 .pc .footer p {
-    color: white;
+    color: #ffffff;
     height: 40px;
     line-height: 40px;
     margin-left: 50px;
 }
 
 .breadcrumb {
-    background-color: black;
+    background-color: #000000;
 }
 
 a.list-group-item:before,
 .breadcrumb>li+li:before {
-    color: coral;
+    color: #ff6633;
     content: " > ";
     padding: 0 5px;
 }
 
 .breadcrumb>li a {
-    color: white;
+    color: #ffffff;
 }
 
 .breadcrumb>.active {
-    color: coral;
+    color: #ff6633;
 }
 
 .pc .crumb {
@@ -382,25 +382,29 @@ a.list-group-item:before,
 }
 
 .pc .wrap .sideleft {
-    background-color: saddlebrown;
+    background-color: #663300;
     width: 200px;
     height: 900px;
     float: left;
 }
 
 .pc .wrap .sideright {
-    background-color: dimgray;
+    background-color: #666666;
     height: 900px;
     margin-left: 210px;
 }
 
 .list-group-item,
-.pc .wrap .sideleft a:link,
-.pc .wrap .sideleft a:visited,
-.pc .wrap .sideleft a:hover,
-.pc .wrap .sideleft a:active {
+.pc .wrap a:link,
+.pc .wrap a:visited,
+.pc .wrap a:hover,
+.pc .wrap a:active {
     background-color: transparent;
     border: transparent;
+}
+
+.list-group-item.active {
+    z-index: inherit;
 }
 
 a.list-group-item {
@@ -408,32 +412,21 @@ a.list-group-item {
     font-size: 14px;
 }
 
+a.list-group-item:visited,
 a.list-group-item:link {
-    color: gainsboro;
+    color: #cccccc;
 }
 
-.list-group-item.active {
-    z-index: inherit;
-}
-
-a.list-group-item:visited {
-    color: lightsteelblue;
-}
-
-a.list-group-item:hover {
-    color: antiquewhite;
-}
-
+a.list-group-item:hover,
 a.list-group-item.active,
 a.list-group-item.active:hover {
-    color: coral;
+    color: #ff6633;
 }
 
 li.list-group-item.active,
 li.list-group-item.active:focus,
 li.list-group-item.active:hover {
-    background-color: coral;
-    border-color: coral;
+    background-color: #ff6633;
     text-align: center;
     font-size: 18px;
 }
